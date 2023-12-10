@@ -37,6 +37,7 @@ app.use("/", require("./routes"));
 app.listen(process.env.PORT, (err) => {
   if(err) console.log("Err while starting server")
   console.log("server started " + process.env.PORT);
+console.log("frotn url " + process.env.FRONTEND_URL);
 });
 module.exports = app;
 // export  default app;
