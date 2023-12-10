@@ -104,7 +104,7 @@ const AnalyticsCompareCategoryChart = (props:any) => {
         const lastweekstart = new Date(ts2__).toISOString();
 
         const res = await axios.post(
-          "http://localhost:5001/expense/getAnalytics",
+          "https://backendbugetify.onrender.com/expense/getAnalytics",
           {
             _id,
             lastweekstart,

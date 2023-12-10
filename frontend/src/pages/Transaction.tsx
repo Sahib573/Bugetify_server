@@ -32,7 +32,7 @@ const Transactions = () => {
         const ts2 = Date.UTC(less.getFullYear(), less.getMonth(), less.getDate());
         const date_ = new Date(ts).toISOString();
         const lessthandate = new Date(ts2).toISOString();
-        let res = await axios.post("http://localhost:5001/expense/byDate", {
+        let res = await axios.post("https://backendbugetify.onrender.com/expense/byDate", {
           _id,
           date : date_,
           lessthandate
@@ -40,7 +40,7 @@ const Transactions = () => {
         const l = new Date(Date.now()-864e5);
         const ts_ = Date.UTC(l.getFullYear(), l.getMonth(), l.getDate());
         const lastdate = new Date(ts_).toISOString();
-        let res2 = await axios.post("http://localhost:5001/expense/byDate", {
+        let res2 = await axios.post("https://backendbugetify.onrender.com/expense/byDate", {
           _id,
           date : lastdate,
           lessthandate : date_,

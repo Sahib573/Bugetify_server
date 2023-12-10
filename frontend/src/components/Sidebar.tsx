@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../images/logo2/default.png";
 import SidebarLinkGroup from "./SidebarLinkGroup";
-import ReactTyped from "react-typed";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -463,11 +462,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <div>
                   <h1 className="text-bold text-white">
-                    <ReactTyped
-                      strings={["Let each spend Become a Trend!!!"]}
-                      typeSpeed={100}
-                      loop
-                    />
+                   
                   </h1>
                 </div>
               </li>

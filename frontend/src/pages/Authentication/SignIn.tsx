@@ -12,7 +12,7 @@ const SignIn = () => {
   const clickHandle = (e: any) => {
     e.preventDefault();
     async function submit() {
-      const res = await axios.post("http://localhost:5001/user/login", {
+      const res = await axios.post("https://backendbugetify.onrender.com/user/login", {
         email,
         password,
       });

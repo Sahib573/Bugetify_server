@@ -13,7 +13,7 @@ const Profile = () => {
       if (getUser) {
         const usr = JSON.parse(getUser);
         const _id = usr._id;
-        const res = await axios.post("http://localhost:5001/user/getProfile", {
+        const res = await axios.post("https://backendbugetify.onrender.com/user/getProfile", {
           _id,
         });
         // console.log(res)
